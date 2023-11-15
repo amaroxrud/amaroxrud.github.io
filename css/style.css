@@ -1,7 +1,40 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
 }
+
+a { 
+  width: 20%;
+  padding: 10px;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.header h1 {
+  color: white;
+  padding: 20px;
+}
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opperst {
+  width: 85%;
+  height: 1000px;
+  justify-content: baseline;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .header {
     background-color: rgb(218, 148, 240);
@@ -11,11 +44,34 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 .header img {
   width: 50px;
   height: 50px;
+  border-radius: 20%;
+  padding: 10px;
 }
 
+.tre {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: medium;
+  width: 80%;
+  border: solid black;
+}
+
+.logo {
+  width: 20%;
+}
+
+.tittel {
+  width: 20%;
+  justify-content: right;
+}
+  
 .row::after {
   content: "";
   clear: both;
@@ -25,6 +81,11 @@ body {
 [class*="col-"] {
   float: left;
   padding: 15px;
+}
+
+#img {
+  height: 100px;
+  width: 100px;
 }
 
 
@@ -59,12 +120,6 @@ html {
   font-family: "Lucida Sans", sans-serif;
 }
 
-.header {
-  background-color: rgb(153, 51, 204);
-  color: #ffffff;
-  padding: 15px;
-}
-
 .menu ul {
   list-style-type: none;
   margin: 0;
@@ -91,9 +146,6 @@ html {
   .col-s-3 {width: 25%;}
   .col-s-6 {width: 50%;}
   .col-s-9 {width: 75%;}
+  a {display:contents;}
 }
-@media only screen and (min-width: 768px) {
-  .col-3 {width: 25%;}
-  .col-6 {width: 50%;}
-  .col-9 {width: 75%;}
-}
+
