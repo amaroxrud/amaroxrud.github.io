@@ -53,14 +53,13 @@ a {
 }
 
 .tre {
-  display: flex;
-  justify-content: space-between;
+  width: 30%;
+  display: flex; 
   flex-direction: row;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: medium;
-  width: 80%;
-  border: solid black;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+ 
 }
 
 .logo {
@@ -71,7 +70,46 @@ a {
   width: 20%;
   justify-content: right;
 }
-  
+
+.projekter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 780px;
+}
+
+.pro1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.pro1 img {
+  width: 45%;
+  border: solid black 3px;
+}
+
+.test {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 50%;
+}
+
+.test:hover {
+  border: 1px solid #777;
+}
+
+.test img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 5px;
+  text-align: center;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -89,13 +127,6 @@ a {
 }
 
 
-
-@media only screen and (max-width: 600px) {
-
-  .header h1 {
-      font-size: medium;
-  }
-}
 [class*="col-"] {
   width: 100%;
 }
@@ -147,5 +178,16 @@ html {
   .col-s-6 {width: 50%;}
   .col-s-9 {width: 75%;}
   a {display:contents;}
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .tre {display:none;}
+  .header h1 {font-size: medium;}
+  .logo a {display: none;}
+  .pro1 {flex-direction: column;}
+  .test {width: 100%;}
+  h3 {padding: 10px;}
+  .col-s-3 img {display: none;}
 }
 
