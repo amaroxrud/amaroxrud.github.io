@@ -3,7 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
-  background-color: #fdf2e2;
+  background-color: #f6f1ea;
 }
 
 a { 
@@ -20,7 +20,9 @@ h4 {
   text-shadow:black 1px 1px;
 }
 
-
+li {
+  text-shadow:black 1px 1px;
+} 
 
 .main-container {
   display: flex;
@@ -96,6 +98,7 @@ h4 {
 .pro1 img {
   width: 45%;
   border: solid black 3px;
+  text-shadow:black 1px 1px;
 }
 
 .test {
@@ -117,6 +120,7 @@ h4 {
 .desc {
   padding: 5px;
   text-align: center;
+  background-color: white;
 }
 
 .row::after {
